@@ -40,12 +40,13 @@
         color: rgb(103, 226, 36);
         text-align: left;
     }
-    .container {
-			display: grid;
-			grid-template-columns: repeat(6, 1fr);
-			grid-template-rows: repeat(4, 1fr);
+    .row {
+			/* display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(6, 1fr);
 			gap: 10px;
-			padding: 10px;
+			padding: 10px; */
+            display: flex;
 		}
 
 		.search-location {
@@ -59,47 +60,181 @@
    <p id="instructions">Click on the bushes to search for the mouse, beware the cat</p> 
    <p  id="bushes">Number of bushes checked is zero.</p>
    <p id="penalty">Penalty is zero.</p>
-   <p id="contact">Click for help.</p>
+   <p id="contact" onclick="help()" >Click for help.</p>
    <p id="help">Help report</p>
+    <div class ="container">
+   
+    <div class="row">
+        <div class="search-location"><img src="bush.jpg" onclick = "check(0)" width="100" height="100" id = "id0"></div>
+        <div class="search-location"><img src="bush.jpg" onclick = "check(1)"width="100" height="100" id = "id1"></div>
+        <div class="search-location"><img src="bush.jpg" onclick = "check(2)"width="100" height="100" id = "id2"></div>
+        <div class="search-location"><img src="bush.jpg" onclick = "check(3)" width="100" height="100" id = "id3"></div>
+        <div class="search-location"><img src="bush.jpg" onclick =  "check(4)" width="100" height="100" id = "id4"></div>
+        <div class="search-location"><img src="bush.jpg" onclick = "check(5)"width="100" height="100" id = "id5"></div>
+        
+    </div>
+    
 
-   <div class="container">
     <div class="row">
-        <div class="search-location"><img src="bush.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="bush.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="bush.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="bush.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="bush.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="bush.jpg" width="100" height="100"></div>
+        <div class="search-location"><img src="bush.jpg" onclick = "check(6)" width="100" height="100" id = "id6"></div>
+        <div class="search-location"><img src="bush.jpg" onclick = "check(7)" width="100" height="100" id = "id7"></div>
+        <div class="search-location"><img src="bush.jpg" onclick = "check(8)" width="100" height="100"id = "id8"></div>
+        <div class="search-location"><img src="bush.jpg" onclick = "check(9)" width="100" height="100"id = "id9"></div>
+        <div class="search-location"><img src="bush.jpg" onclick = "check(10)" width="100" height="100"id = "id10"></div>
+        <div class="search-location"><img src="bush.jpg" onclick = "check(11)" width="100" height="100"id = "id11"></div>
         
     </div>
+
     <div class="row">
-        <div class="search-location"><img src="mouse.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="mouse.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="mouse.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="mouse.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="mouse.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="mouse.jpg" width="100" height="100"></div>
-        
-    </div>
-    <div class="row">
-        <div class="search-location"><img src="bigcat.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="bigcat.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="bigcat.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="bigcat.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="bigcat.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="bigcat.jpg" width="100" height="100"></div>
+        <div class="search-location"><img src="bush.jpg" onclick = "check(12)" width="100" height="100"id = "id12"></div>
+        <div class="search-location"><img src="bush.jpg" onclick = "check(13)" width="100" height="100"id = "id13"></div>
+        <div class="search-location"><img src="bush.jpg" onclick = "check(14)" width="100" height="100"id = "id14"></div>
+        <div class="search-location"><img src="bush.jpg" onclick = "check(15)" width="100" height="100"id = "id15"></div>
+        <div class="search-location"><img src="bush.jpg" onclick = "check(16)" width="100" height="100"id = "id16"></div>
+        <div class="search-location"><img src="bush.jpg" onclick = "check(17)" width="100" height="100"id = "id17"></div>
       
     </div>
+    
     <div class="row">
-        <div class="search-location"><img src="grass.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="grass.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="grass.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="grass.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="grass.jpg" width="100" height="100"></div>
-        <div class="search-location"><img src="grass.jpg" width="100" height="100"></div>
+        <div class="search-location"><img src="bush.jpg"onclick = "check(18)" width="100" height="100" id = "id18"></div>
+        <div class="search-location"><img src="bush.jpg"onclick = "check(19)"width="100" height="100"  id = "id19"></div>
+        <div class="search-location"><img src="bush.jpg"onclick = "check(20)" width="100" height="100" id = "id20"></div>
+        <div class="search-location"><img src="bush.jpg"onclick = "check(21)" width="100" height="100" id = "id21"></div>
+        <div class="search-location"><img src="bush.jpg"onclick = "check(22)" width="100" height="100" id = "id22"></div>
+        <div class="search-location"><img src="bush.jpg"onclick = "check(23)" width="100" height="100" id = "id23"></div>
         
     </div>
    </div>
+   <script>
+    let id='id';
+    let checkCount=0;
+    let penalty=0;
+    let lastCheck=0;
+    let mouseLocation=Math.floor(Math.random() * 24);
+    let catLocation=Math.floor(Math.random() * 24);
+    let gameOver=false;
+    let ids=[ ];
+    for(let i=0;i<=23;i++){
+        ids[i]=id+i;
+        
+       // console.log(ids[i]);
+    }  
+    function check(position){
+      if(gameOver==true){
+
+      }
+      else{
+          if(position==13){
+              id=ids[position]
+              document.getElementById(id).src="mouse.jpg";
+              gameOver=true;
+              penalty=penalty-3;
+              console.log("image is mouse "+position);
+              console.log("penalty is "+penalty);
+              console.log("GameOver");
+          }
+          else if(position==21){
+              id=ids[position]
+              document.getElementById(id).src="bigcat.jpg";
+              gameOver=true;
+              penalty=penalty+4;
+              console.log("image is cat "+position);
+              console.log("penalty is "+penalty);
+              console.log("GameOver");
+          }
+          else {
+              id=ids[position]
+              document.getElementById(id).src="Grass.jpg";
+              checkCount+=1;
+              penalty+=1;
+              console.log("checkcount is "+checkCount);
+              console.log("penalty is " +penalty);
+          }
+          lastCheck=position;
+          console.log("lastCheck position is "+lastCheck);
+        
+      }
+       
+      bushes.innerHTML="Number of bushes checked is "+checkCount;
+      penalty.innerHTML="Penalty is "+penalty;
+      
+      
+  }
+  function help() {
+      let catRow = Math.floor(catLocation / 4);
+      let catColumn = catLocation % 6;
+      let mouseRow = Math.floor(mouseLocation / 4);
+      let mouseColumn = mouseLocation % 6;
+      let lastRow = Math.floor(lastCheck / 4);
+      let lastColumn = lastCheck % 6;
+      console.log(
+        catRow,
+        catColumn,
+        mouseRow,
+        mouseColumn,
+        lastRow,
+        lastColumn
+      );
+      penalty = penalty + 2;
+      document.getElementById("penalty").innerHTML = "Penalty is " + penalty;
+      if (
+        Math.abs(catRow - lastRow) <= 1 &&
+        Math.abs(catColumn - lastColumn) <= 1 &&
+        (Math.abs(catRow - mouseRow) > 1 ||
+          Math.abs(catColumn - mouseColumn) > 1)
+      ) {
+        document.getElementById("help").innerText = "meow";
+      } else if (
+        Math.abs(mouseRow - lastRow) <= 1 &&
+        Math.abs(mouseColumn - lastColumn) <= 1 &&
+        (Math.abs(catRow - mouseRow) > 1 ||
+          Math.abs(catColumn - mouseColumn) > 1)
+      ) {
+        document.getElementById("help").innerText = "squeak";
+      } else {
+        document.getElementById("help").innerText = "sorry, no help available";
+      }
+    }
+
+    function bonus() {
+      let mouseLocation = Math.floor(Math.random() * 24);
+      console.log("mouse location " + mouseLocation);
+      let catLocation = Math.floor(Math.random() * 24);
+      console.log("cat location " + catLocation);
+      document.getElementById("bushes").innerText =
+        "Number of bushes checked is " + 0;
+      document.getElementById("penalty").innerText = "Penalty is " + 0;
+      for (i = 0; i < 24; i++) {
+        if (i == mouseLocation) {
+          document.getElementById(imageID[i]).src = "mouse.jpg";
+        } else if (i == catLocation) {
+          document.getElementById(imageID[i]).src = "tiger.jpg";
+        } else {
+          document.getElementById(imageID[i]).src = "bush.jpg";
+        }
+      }
+    }
+    function bonus() {
+      let mouseLocation = Math.floor(Math.random() * 24);
+      console.log("mouse location " + mouseLocation);
+      let catLocation = Math.floor(Math.random() * 24);
+      console.log("cat location " + catLocation);
+      document.getElementById("bushes").innerText =
+        "Number of bushes checked is " + 0;
+      document.getElementById("penalty").innerText = "Penalty is " + 0;
+      for (i = 0; i < 24; i++) {
+        if (i == mouseLocation) {
+          document.getElementById(imageID[i]).src = "mouse.jpg";
+        } else if (i == catLocation) {
+          document.getElementById(imageID[i]).src = "tiger.jpg";
+        } else {
+          document.getElementById(imageID[i]).src = "bush.jpg";
+        }
+      }
+    }
+  
+</script>
+
 
    
 
